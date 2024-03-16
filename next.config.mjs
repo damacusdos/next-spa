@@ -27,6 +27,7 @@ const nextConfig = {
 
     return config;
   },
+  basePath: "/next-spa",
   reactStrictMode: true,
   output: "export",
 };
