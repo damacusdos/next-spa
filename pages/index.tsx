@@ -1,7 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
+import Head from 'next/head';
+import Image from 'next/image';
 // components
-import { Login } from "@/components/features";
+import { Login } from '@/components/features';
 
 export default function Home() {
   return (

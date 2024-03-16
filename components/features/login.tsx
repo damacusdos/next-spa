@@ -1,10 +1,17 @@
+import { useRouter } from 'next/router';
 // components
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 // icons
-import AccountSVG from "@/public/assets/account.svg";
+import AccountSVG from '@/public/assets/account.svg';
 
 export const Login = () => {
+  const router = useRouter();
+
+  const handleLogin = () => {
+    router.push('/products');
+  };
+
   return (
     <div className="bg-white flex flex-col justify-center items-center p-8 w-[400px] rounded-xl border b-[#100F0F]">
       <AccountSVG className="text-black w-6 h-6" />
@@ -23,7 +30,9 @@ export const Login = () => {
         </div>
       </div>
 
-      <Button className="w-full mt-24">Login</Button>
+      <Button className="w-full mt-24" onClick={handleLogin}>
+        Login
+      </Button>
     </div>
   );
 };
