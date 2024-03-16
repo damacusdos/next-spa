@@ -1,6 +1,6 @@
 import Head from 'next/head';
 // components
-import { ProductsTable } from './Table';
+import ProductsTable from './Table';
 
 export default function Products() {
   return (

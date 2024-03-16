@@ -58,7 +58,7 @@ const columns = [
   }),
 ];
 
-export const ProductsTable = () => {
+const ProductsTable = () => {
   const table = useReactTable({
     data: products,
     columns,
@@ -97,3 +97,5 @@ export const ProductsTable = () => {
     </div>
   );
 };
+
+export default ProductsTable;
